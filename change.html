@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Computer Prototype</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/script.js"></script>
+  </head>
+  <body onload="change_form()">
+    <div id="flex-container">
+      <header id="flex-header">
+        <section id="flex-logoheader">
+          <img id="nlogo" src="images/n.jpg">
+          <a href="index.html" id="flex-logoheader-title">Housing Portal</a>
+          <div style="flex: 1;"></div>
+          <div id="profile"></div>
+          <a id="profile-text" href="error.html">John Doe</a>
+        </section>
+        <nav id="flex-nav">
+          <a class="flex-navitem" href="index.html">Home</a>
+          <a class="flex-navitem" href="housing.html">Housing</a>
+          <a class="flex-navitem" href="error.html">FixIt</a>
+          <a class="flex-navitem flex-navitem-active" href="dining.html">Meals</a>
+          <a class="flex-navitem" href="error.html">Mail</a>
+        </nav>
+      </header>
+      <section id="flex-body">
+        <a href="error.html">
+          <section id="mealswipes" class="top-banner">
+            <p style="flex: 1">Meal Swipes Remaining</p>
+            <p>374/440</p>
+          </section>
+        </a>
+        <section class="info-box">
+          <h1>Meal Plan Change Form</h1>
+          <h2>Select a Meal Plan</h2>
+          <form>
+            <fieldset>
+              <div>
+                  <input type="radio" name="plan" id="plan-220" value="220" checked>
+                  <label for="plan-220">220</label>
+              </div>
+              <div>
+                <input type="radio" name="plan" id="plan-440" value="440">
+                <label for="plan-440">440</label>
+              </div>
+              <div>
+                <input type="radio" name="plan" id="plan-unlimited" value="infinity">
+                <label for="plan-unlimited">Unlimited</label>
+              </div>
+              <div>
+                <input type="checkbox" name="agree" id="i-agree">
+                <label for="i-agree">I agree that this might cost me some money</label>
+              </div>
+            </fieldset>
+          </form>
+          <div class="info-button" id="submit-button">
+            <a>Submit &#8594;</a>
+          </div>
+        </section>
+      </section>
+      <footer id="flex-footer">
+        <a href="error.html">Additional Links</a>
+        <a href="error.html">Contact Info</a>
+      </footer>
+    </div>
+  </body>
+</html>

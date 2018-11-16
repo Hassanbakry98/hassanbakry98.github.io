@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Computer Prototype</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/script.js"></script>
+  </head>
+  <body onload="on_load()">
+    <div id="flex-container">
+      <header id="flex-header">
+        <section id="flex-logoheader">
+          <img id="nlogo" src="images/n.jpg">
+          <a href="index.html" id="flex-logoheader-title">Housing Portal</a>
+          <div style="flex: 1;"></div>
+          <div id="profile"></div>
+          <a id="profile-text" href="error.html">John Doe</a>
+        </section>
+        <nav id="flex-nav">
+          <a class="flex-navitem flex-navitem-active" href="index.html">Home</a>
+          <a class="flex-navitem" href="housing.html">Housing</a>
+          <a class="flex-navitem" href="error.html">FixIt</a>
+          <a class="flex-navitem" href="dining.html">Meals</a>
+          <a class="flex-navitem" href="error.html">Mail</a>
+        </nav>
+      </header>
+      <section id="flex-body">
+        <a href="dining.html">
+          <section id="mealswipes" class="top-banner">
+            <p style="flex: 1">Meal Swipes Remaining</p>
+            <p>374/440</p>
+          </section>
+        </a>
+        <a href="error.html">
+          <section id="packages" class="top-banner">
+            <p style="flex: 1">Packages Available</p>
+            <p>No</p>
+          </section>
+        </a>
+        <section class="info-box">
+          <h1>Contract Summary</h1>
+          <h2><b>Building: </b>Knoll</h2>
+          <h2><b>Room: </b>212</h2>
+          <table class="info-table">
+            <thead>
+              <tr>
+                <td>Roommate Name</td>
+                <td>Room</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  Thurman Rushdan
+                </td>
+                <td>
+                  212A
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Buster Apking
+                </td>
+                <td>
+                  212B
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="info-button">
+            <a href="housing.html">View Contract &#8594;</a>
+          </div>
+        </section>
+      </section>
+      <footer id="flex-footer">
+        <a href="error.html">Additional Links</a>
+        <a href="error.html">Contact Info</a>
+      </footer>
+    </div>
+  </body>
+</html>
